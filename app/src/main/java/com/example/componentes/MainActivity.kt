@@ -70,6 +70,10 @@ fun BasicComponentsScreen(modifier: Modifier = Modifier) {
                 fontFamily = RightsStatus,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
+        AndroidEnemy(
+            color = Color.Yellow,
+
+        )
     }
 }
 @Composable
