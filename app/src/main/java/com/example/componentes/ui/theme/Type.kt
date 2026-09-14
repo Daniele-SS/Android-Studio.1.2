@@ -1,12 +1,17 @@
 package com.example.componentes.ui.theme
 
+import android.drm.DrmStore
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.componentes.R
 
-// Set of Material typography styles to start with
+val RightsStatus = FontFamily(
+    Font(R.font.robotomono_italic_variablefont_wght)
+)
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
