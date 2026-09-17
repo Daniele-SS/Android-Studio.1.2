@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -70,11 +71,17 @@ fun BasicComponentsScreen(modifier: Modifier = Modifier) {
                 fontFamily = RightsStatus,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
-        AndroidEnemy(
-            color = Color.Yellow,
 
+        TextField(
+            value = "Boolean",
+            onValueChange = {},
+            modifier = Modifier.fillMaxWidth()
         )
-    }
+
+        AndroidEnemy(
+            color = Color.Yellow
+        )
+    } //Column
 }
 @Composable
 fun AndroidEnemy(
